@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac's Portfolio</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navigation-bar">
+        <label class="name primary">Isaac Price</label>
+        <div class="sep">
+            <div class="nav-link-bg"><a href="#about-me" class="secondary">About Me</a></div>
+            <div class="nav-link-bg"><a href="#" class="secondary">Projects</a></div>
+            <div class="nav-link-bg"><a href="#" class="secondary">Accomplishments</a></div>
+            <div class="nav-link-bg"><a href="#" class="secondary">Contact Me</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="header-gap"></div>
+        <div class="about-me" div="about-me">
+            <section class="introduction"></section>
+                <img src="content/blank usr.png" alt="Picture of Isaac Price" />
+                <label class="primary about-name hidden">Hi, I'm Isaac</label>
+                <div class="socials hidden"></div>
+                <p class="desc text hidden animated-paragraph">I'm an ambitious high school junior with solid skills in machine learning and deep learning. I enjoy tackling complex AI projects and pride myself on my quick learning abilities. Ready to bring my youthful energy, technical expertise, and problem-solving skills into real-world AI applications.</p>
+            </section>
+
+            <div class="skills">
+                <div class="skill data-visualization hidden">
+                    <label class="secondary ul-title">Data Visualization</label>
+                    <ul>
+                        <li class="text">Seaborn</li>
+                        <li class="text">matplotlib</li>
+                        <li class="text">plot.ly (TODO)</li>
+                        <li class="text">Bokeh (TODO)</li>
+                        <li class="text">D3.js (TODO)</li>
+                    </ul>
+                </div>
+                <div class="skill Data-Science hidden">
+                    <label class="secondary ul-title">Data Science</label>
+                    <ul>
+                        <li class="text">Jupyter</li>
+                        <li class="text">pandas</li>
+                        <li class="text">numPy</li>
+                        <li class="text">R (TODO)</li>
+                        <li class="text">sciPy (TODO)</li>
+                    </ul>
+                </div>
+                <div class="skill AI hidden">
+                    <label class="secondary ul-title">Articial Intelligence</label>
+                    <ul>
+                        <li class="text">scikit-learn</li>
+                        <li class="text">TensorFlow</li>
+                        <li class="text">pyTorch (TODO)</li>
+                        <li class="text">Keras (TODO)</li>
+                    </ul>
+                </div>
+                <div class="skill front-end hidden">
+                    <label class="secondary ul-title">Frontend Developer</label>
+                    <ul>
+                        <li class="text">HTML / CSS</li>
+                        <li class="text">JavaScript</li>
+                        <li class="text">Version Control (Git)</li>
+                        <li class="text">libraries (TODO)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <!-- This is something im not really sure about yet, will likely have to come back to this after I have better JavaScript. Check readme. -->
+            <div class="infos">
+                <div class="informational-widget slider-item">
+                    <label class="secondary">Header</label>
+                    <label class="accent date">dd-mm-yyyy</label>
+                    <label class="text information">This is where the information goes.</label>
+                </div>
+                <div class="informational-widget slider-item">
+                    <label class="secondary">Header</label>
+                    <label class="accent date">dd-mm-yyyy</label>
+                    <label class="text information">This is where the information goes.</label>
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="projects">
+            <div class="project AI-music-suggester">
+                <label class="secondary ">AI music suggester</label>
+                <label class="accent project-time">Aug 2023 - TBD</label>
+                <p class="text information">This is made to take in a playlist, get all of the songs and using some feature engineering, will find out songs that are similar, but not necciciarly </p>
+            </div>
+        </div>
+        </main>
+    </main>
+</body>
+</html>

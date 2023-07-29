@@ -1,0 +1,237 @@
+@font-face { font-family: RobotoMono;src: url('fonts/RobotoMono-Regular.ttf');} 
+@font-face {font-family: SpaceMono;src: url('fonts/SpaceMono-Regular.ttf')}
+
+/* By Default, the web page is going to in mobile */
+
+p {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    background-color: #1C2026;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    z-index: 5;
+}
+
+.sep {
+    display: none;
+}
+
+.nav-link-bg {
+    padding: 0px 3px;
+    background: #282c3481;
+    border-radius: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.name {
+    font-size: 4vh;
+    text-align: center;
+}
+
+/* Media query for larger screens (desktop) */
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    
+    .sep {
+        display: flex;
+        gap: 15px;
+        padding-right: 4vw;
+    }
+
+    .name {
+        font-size: 3vh;
+    }
+}
+
+/* Basic background and colors and font selectors */
+body {
+    background-color: #282C34;
+}
+
+.header-gap {
+    height: 15vh;
+    width: 100%;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 30%;
+    max-width: 200px;
+}
+
+.about-name {
+    padding: 30px;
+    font-size: 5vh;
+}
+
+.primary {
+    font-family: SpaceMono, sans-serif;
+    color: #61AFEF;
+}
+
+.secondary {
+    font-family: RobotoMono;
+    color: #E06C75;
+}
+
+.desc {
+    padding: 5px 10vw;
+    max-width: 750px;
+}
+
+.text {
+    font-family: RobotoMono, sans-serif;
+    color: #ABB2BF;
+    font-size: 1.33rem;
+}
+
+.ul-title {
+    font-size: 1.5rem;
+}
+
+.skills {
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 95%;
+    background-color: #22262d;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.skill {
+    background-color: #282C34;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .skill:nth-child(2) {
+        transition-delay: 200ms;
+    }
+    .skill:nth-child(3) {
+        transition-delay: 400ms;
+    }
+    .skill:nth-child(4) {
+        transition-delay: 600ms;
+    }
+    .skill:nth-child(5) {
+        transition-delay: 800ms;
+    }
+}
+
+.timeline {
+    height: 60vh;
+    overflow-x: auto;
+    white-space: nowrap; /* Keeps the contents on a single line */
+    /* Optional: Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    display: none /* I can always get back to this later */
+}
+
+.infos {
+    display: flex;
+    gap: 5vw;
+}
+
+.bottom-line {
+    position: relative;
+    top: 5vh;
+    height: 3px;
+    width: 200vw;
+    background-color: white;
+}
+
+.informational-widget {
+    background-color: #22262d;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 35vh;
+    margin-top: 5vh;
+    scroll-snap-align: start; /* This makes the start (left edge for LTR languages) of the element a snap position */
+}
+
+.slider-item {
+    opacity: 0.6;
+    transform: scale(1);
+    transition: all 1s;
+}
+
+.slider-item.highlight {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.informational-widget.visible {
+    transform: translateX(0);
+}
+
+.accent {
+    font-family: RobotoMono;
+    color: #98C379;
+}
+
+.information {
+    font-size: 2.33vh;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-50%);
+    filter: blur(3px);
+    transition: all .66s;
+}
+
+.show {
+    transform: translateX(0);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.projects {
+    height: 100vh;
+}
+
+.project {
+    height: 50vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
