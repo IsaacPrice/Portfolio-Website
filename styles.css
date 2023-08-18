@@ -224,7 +224,15 @@ img {
 }
 
 .projects {
-    height: 100vh;
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    margin: 10px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project {
@@ -234,4 +242,23 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 5px;
+    background-color: #22262d;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+        width: 40%;
+        height: 30vh;
+    }
+}
+
+.project label:first-of-type {
+    font-size: 1.5rem;
+}
+
+.project a {
+    color: #E06C75;
+    text-decoration: none;
 }
