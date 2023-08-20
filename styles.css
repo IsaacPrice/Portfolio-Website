@@ -115,6 +115,7 @@ img {
 }
 
 .skills {
+    margin-top: 10vh;
     top: 0;
     left: 0;
     border-radius: 5px;
@@ -125,13 +126,22 @@ img {
     padding: 15px;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
 }
-
 
 .skill {
     background-color: #282C34;
     border-radius: 5px;
     padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.front-end svg{
+    width: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,6 +157,13 @@ img {
     .skill:nth-child(5) {
         transition-delay: 800ms;
     }
+}
+
+.graphic {
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline {
@@ -224,7 +241,6 @@ img {
 }
 
 .projects {
-    height: 50vh;
     width: 80%;
     display: flex;
     text-align: center;
@@ -233,6 +249,13 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.projects .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px auto;
 }
 
 .project {
@@ -261,4 +284,37 @@ img {
 .project a {
     color: #E06C75;
     text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.Accomplishments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10vh auto;
+    width: 80%;
+    
+}
+
+.accomplishment {
+    background-color: #22262d;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.Accomplishments .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px auto;
 }

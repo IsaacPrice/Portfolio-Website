@@ -26,7 +26,7 @@ $(document).ready(function() {
             el.append(`${word} `);
 
             // If the height has increased, a new line has started
-            if (el.height() > 70 * (lineIndex + 1)) {
+            if (el.height() > 70 * (lineIndex )) {
                 lineIndex++; // Increase the line index
                 lineArray.push(''); // Push an empty string onto the array
             }
