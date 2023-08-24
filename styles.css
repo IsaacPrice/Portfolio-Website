@@ -318,3 +318,28 @@ img {
     font-size: 2rem;
     margin: 10px auto;
 }
+
+.contact-me .title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px auto;
+}
+
+.contact-me p {
+    text-align: center;
+}
+
+.contact-me a {
+    text-decoration: none;
+    color: #ABB2BF;
+}
+
+.contact-me a:hover {
+    color: #61AFEF;
+    text-decoration: underline;
+}
+
+.gap {
+    height: 15vh;
+}
